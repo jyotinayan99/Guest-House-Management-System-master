@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8B6749DA-0CBA-4C4F-88D5-25DD734C6A4A}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>GuestHouseManagement</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>Pure</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>Pure</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Form_Customer_Homepage.cpp" />
+    <ClCompile Include="Form_Edit_Booking.cpp" />
+    <ClCompile Include="Form_Edit_Staff_Details.cpp" />
+    <ClCompile Include="Form_Feedback.cpp" />
+    <ClCompile Include="Form_Reception.cpp" />
+    <ClCompile Include="Form_Show_Guest_House_Facilities.cpp" />
+    <ClCompile Include="Guest-House-Management.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UserControl_Add_Cab_Details.cpp" />
+    <ClCompile Include="UserControl_Add_Mess.cpp" />
+    <ClCompile Include="UserControl_Add_Places.cpp" />
+    <ClCompile Include="UserControl_Add_Restaurant.cpp" />
+    <ClCompile Include="UserControl_Add_Room.cpp" />
+    <ClCompile Include="UserControl_Approve_Users.cpp" />
+    <ClCompile Include="UserControl_Booking_Approval.cpp" />
+    <ClCompile Include="UserControl_Customer_Admin_Feedback.cpp" />
+    <ClCompile Include="UserControl_Customer_Book_Edit.cpp" />
+    <ClCompile Include="UserControl_Customer_Feedback.cpp" />
+    <ClCompile Include="UserControl_Customer_Housekeeping.cpp" />
+    <ClCompile Include="UserControl_Extra_Charges.cpp" />
+    <ClCompile Include="UserControl_Floor_Map.cpp" />
+    <ClCompile Include="UserControl_Generate_Bill.cpp" />
+    <ClCompile Include="UserControl_GuestHouseDetails.cpp" />
+    <ClCompile Include="UserControl_Guest_House_Info.cpp" />
+    <ClCompile Include="UserControl_In_Stay_Facilities.cpp" />
+    <ClCompile Include="UserControl_Login.cpp" />
+    <ClCompile Include="UserControl_Mess_Rates.cpp" />
+    <ClCompile Include="UserControl_Password_Change.cpp" />
+    <ClCompile Include="UserControl_Room_Types.cpp" />
+    <ClCompile Include="UserControl_Room_Types2.cpp" />
+    <ClCompile Include="UserControl_Signup.cpp" />
+    <ClCompile Include="UserControl_Staff.cpp" />
+    <ClCompile Include="UserControl_Staff_Booking_Display.cpp" />
+    <ClCompile Include="UserControl_Staff_Edit.cpp" />
+    <ClCompile Include="UserControl_Staff_Edit_Details.cpp" />
+    <ClCompile Include="UserControl_Staff_Housekeeping_Approval.cpp" />
+    <ClCompile Include="UserControl_Staff_Leave.cpp" />
+    <ClCompile Include="UserControl_Staff_Leave_Approval.cpp" />
+    <ClCompile Include="UserControl_Staff_Planner.cpp" />
+    <ClCompile Include="UserControl_Staff_Planner_Requirements.cpp" />
+    <ClCompile Include="UserControl_Staff_Record.cpp" />
+    <ClCompile Include="UserControl_Staff_Register.cpp" />
+    <ClCompile Include="UserControl_Staff_View_Details.cpp" />
+    <ClCompile Include="UserControl_Status_Room.cpp" />
+    <ClCompile Include="UserControl_User_Types.cpp" />
+    <ClCompile Include="UserControl_View_Cab.cpp" />
+    <ClCompile Include="UserControl_View_Mess.cpp" />
+    <ClCompile Include="UserControl_View_Restaurants.cpp" />
+    <ClCompile Include="UserControl_View_TouristPlaces.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Form_Customer_Homepage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form_Edit_Booking.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form_Feedback.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form_Show_Guest_House_Facilities.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="tosstring.h" />
+    <ClInclude Include="UserControl_Add_Cab_Details.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Add_Mess.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Add_Places.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Add_Restaurant.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Booking_Approval.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Customer_Admin_Feedback.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Customer_Booking.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="Form1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form_Edit_Staff_Details.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form_Reception.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="UserControl_Add_Room.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Approve_Users.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Customer_Book_Edit.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Customer_Feedback.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Customer_Housekeeping.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Extra_Charges.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Floor_Map.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Generate_Bill.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_GuestHouseDetails.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Guest_House_Info.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_In_Stay_Facilities.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Login.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Mess_Rates.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Password_Change.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Room_Types2.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Signup.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Staff.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Staff_Booking_Display.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Staff_Edit.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Staff_Edit_Details.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Staff_Housekeeping_Approval.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Staff_Leave.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Staff_Leave_Approval.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Staff_Planner.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Staff_Planner_Requirements.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Staff_Record.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Staff_Register.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Staff_View_Details.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_Status_Room.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_User_Types.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_View_Cab.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_View_Mess.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_View_Restaurants.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserControl_View_TouristPlaces.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form_Customer_Homepage.resx">
+      <DependentUpon>Form_Customer_Homepage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Edit_Booking.resx">
+      <DependentUpon>Form_Edit_Booking.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Feedback.resx">
+      <DependentUpon>Form_Feedback.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Show_Guest_House_Facilities.resx">
+      <DependentUpon>Form_Show_Guest_House_Facilities.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Add_Cab_Details.resx">
+      <DependentUpon>UserControl_Add_Cab_Details.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Add_Mess.resx">
+      <DependentUpon>UserControl_Add_Mess.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Add_Places.resx">
+      <DependentUpon>UserControl_Add_Places.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Add_Restaurant.resx">
+      <DependentUpon>UserControl_Add_Restaurant.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Booking_Approval.resx">
+      <DependentUpon>UserControl_Booking_Approval.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Customer_Admin_Feedback.resx">
+      <DependentUpon>UserControl_Customer_Admin_Feedback.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Customer_Booking.resx">
+      <DependentUpon>UserControl_Customer_Booking.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resX">
+      <DependentUpon>Form1.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Edit_Staff_Details.resx">
+      <DependentUpon>Form_Edit_Staff_Details.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Reception.resx">
+      <DependentUpon>Form_Reception.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Add_Room.resx">
+      <DependentUpon>UserControl_Add_Room.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Approve_Users.resx">
+      <DependentUpon>UserControl_Approve_Users.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Customer_Book_Edit.resx">
+      <DependentUpon>UserControl_Customer_Book_Edit.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Customer_Feedback.resx">
+      <DependentUpon>UserControl_Customer_Feedback.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Customer_Housekeeping.resx">
+      <DependentUpon>UserControl_Customer_Housekeeping.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Extra_Charges.resx">
+      <DependentUpon>UserControl_Extra_Charges.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Floor_Map.resx">
+      <DependentUpon>UserControl_Floor_Map.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Generate_Bill.resx">
+      <DependentUpon>UserControl_Generate_Bill.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_GuestHouseDetails.resx">
+      <DependentUpon>UserControl_GuestHouseDetails.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Guest_House_Info.resx">
+      <DependentUpon>UserControl_Guest_House_Info.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_In_Stay_Facilities.resx">
+      <DependentUpon>UserControl_In_Stay_Facilities.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Login.resx">
+      <DependentUpon>UserControl_Login.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Mess_Rates.resx">
+      <DependentUpon>UserControl_Mess_Rates.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Password_Change.resx">
+      <DependentUpon>UserControl_Password_Change.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Room_Types.resx" />
+    <EmbeddedResource Include="UserControl_Room_Types2.resx">
+      <DependentUpon>UserControl_Room_Types2.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Signup.resx">
+      <DependentUpon>UserControl_Signup.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Staff.resx">
+      <DependentUpon>UserControl_Staff.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Staff_Booking_Display.resx">
+      <DependentUpon>UserControl_Staff_Booking_Display.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Staff_Edit.resx">
+      <DependentUpon>UserControl_Staff_Edit.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Staff_Edit_Details.resx">
+      <DependentUpon>UserControl_Staff_Edit_Details.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Staff_Housekeeping_Approval.resx">
+      <DependentUpon>UserControl_Staff_Housekeeping_Approval.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Staff_Leave.resx">
+      <DependentUpon>UserControl_Staff_Leave.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Staff_Leave_Approval.resx">
+      <DependentUpon>UserControl_Staff_Leave_Approval.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Staff_Planner.resx">
+      <DependentUpon>UserControl_Staff_Planner.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Staff_Planner_Requirements.resx">
+      <DependentUpon>UserControl_Staff_Planner_Requirements.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Staff_Record.resx">
+      <DependentUpon>UserControl_Staff_Record.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Staff_Register.resx">
+      <DependentUpon>UserControl_Staff_Register.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Staff_View_Details.resx">
+      <DependentUpon>UserControl_Staff_View_Details.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Status_Room.resx">
+      <DependentUpon>UserControl_Status_Room.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_User_Types.resx">
+      <DependentUpon>UserControl_User_Types.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_View_Cab.resx">
+      <DependentUpon>UserControl_View_Cab.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_View_Mess.resx">
+      <DependentUpon>UserControl_View_Mess.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_View_Restaurants.resx">
+      <DependentUpon>UserControl_View_Restaurants.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_View_TouristPlaces.resx">
+      <DependentUpon>UserControl_View_TouristPlaces.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="Debug\UserControl_Room_Types.obj" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
